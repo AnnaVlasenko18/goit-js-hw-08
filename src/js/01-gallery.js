@@ -1,6 +1,7 @@
 
 import { galleryItems } from './gallery-items';
 
+
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
@@ -20,7 +21,7 @@ const markup = galleryItems.map(item =>
 
 gallery.insertAdjacentHTML('beforeend', markup.join(''));
 
-const SimpleLightbox = new SimpleLightbox('.gallery a', {
+const simpleLightbox = new SimpleLightbox('.gallery a', {
     captionsData:'alt',
     captionDelay: 250,
 });
